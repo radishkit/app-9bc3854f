@@ -1,17 +1,23 @@
 {
   "$schema": "https://radishkit.com/schemas/radish-app.json",
-  "name": "Accela Dashboard",
+  "name": "Special Events Permit Portal",
   "version": "1.0.0",
-  "description": "Records dashboard with search, filters, and view toggle",
+  "description": "Citizen-facing portal for applying for special event permits — street fairs, parades, film shoots, block parties — in the City of Null Island",
   "template": "accela-dashboard",
+  "appId": "9bc3854f-952a-421c-ab34-04bb180f219e",
+  "agencyId": "f4dfaeaa-dde2-48e8-8537-0e63cc63d27d",
   "runtime": {
     "entrypoint": "src/main.tsx",
     "framework": "react",
     "bundler": "vite"
   },
-  "connectors": ["accela"],
+  "connectors": [
+    "accela"
+  ],
   "permissions": {
-    "network": ["accela"],
+    "network": [
+      "accela"
+    ],
     "storage": false
   }
 }
